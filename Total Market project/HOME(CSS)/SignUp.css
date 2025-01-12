@@ -1,0 +1,75 @@
+/************Style LogIn Form*****************/
+#signUpDiv{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(250, 249, 247);
+    border: 1px solid rgb(250, 249, 247);
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+
+#divForm{
+    margin: 50px;
+    
+}
+
+#signUpForm{
+    position: relative;
+}
+
+#caption{
+    color:#3397ef ;
+}
+
+.inputForm{
+    border: none;
+    border-bottom:1px solid #3397ef;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.inputForm:focus {
+    border-bottom: 2px solid #007BFF; 
+  }
+
+.formLabel{
+position: absolute;
+font-size: 16px;
+color: #3397ef;
+}
+
+.divv{
+    margin-top: 20px;
+}
+
+#divInputName{
+    margin-top: 20px;
+}
+
+#divPassword1,#divPassword2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#signUp-button{
+    padding: 15px 40px;
+    background-color: #3397ef;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+#para2{
+    display: inline;
+}
+
+#alink2{
+    color: #007BFF;
+}

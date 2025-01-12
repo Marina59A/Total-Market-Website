@@ -1,0 +1,83 @@
+/************Style LogIn Form*****************/
+#logInDiv {
+  width: 500px;
+  height: 450px;
+  background-color: rgb(250, 249, 247);
+  border: 1px solid rgb(250, 249, 247);
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+}
+
+#divForm {
+  margin: 80px;
+}
+
+#logInForm {
+  position: relative;
+}
+
+#caption {
+  color: #3397ef;
+}
+
+.inputForm {
+  border: none;
+  border-bottom: 1px solid #3397ef;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.inputForm:focus {
+  border-bottom: 2px solid #007bff;
+}
+
+.formLabel {
+  position: absolute;
+  font-size: 16px;
+  color: #3397ef;
+}
+
+#divInputName {
+  margin-top: 20px;
+}
+
+#divPassword {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#forgetId {
+  text-align: right;
+}
+
+#forgetpass {
+  color: black;
+}
+
+#signin-button {
+  padding: 15px 40px;
+  background-color: #3397ef;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+}
+#signin-button:hover {
+  background-color: black;
+  color: #3397ef;
+  cursor: pointer;
+}
+
+#para1 {
+  display: inline;
+}
+
+#alink {
+  color: #007bff;
+}

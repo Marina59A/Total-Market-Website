@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignUp Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../HOME(CSS)/SignUp.css" />
+    <link rel="stylesheet" href="../HOME(CSS)/Header&Footer.css" />
+    <link rel="stylesheet" href="../HOME(CSS)/Home.css" />
+  </head>
+
+  <body>
+    <div id="signUpDiv">
+      <div id="divForm">
+        <form action="" method="" id="signUpForm">
+          <div id="caption">
+            <caption>
+              Enter your details
+            </caption>
+            <br />
+          </div>
+          <div id="divInputFName" class="divv">
+            <label for="FName" class="formLabel" id="label1"> First name </label
+            ><br />
+            <input
+              id="FName"
+              class="inputForm"
+              type="text"
+              name="firstName"
+              required
+            />
+          </div>
+          <div id="divInputLName" class="divv">
+            <label for="LName" class="formLabel" id="label1"> Last name </label
+            ><br />
+            <input
+              id="LName"
+              class="inputForm"
+              type="text"
+              name="listName"
+              required
+            />
+          </div>
+          <div id="divInputEmail" class="divv">
+            <label for="inputEmail" class="formLabel" id="label1">
+              Email
+            </label>
+            <br />
+            <input
+              id="inputEmail"
+              class="inputForm"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+          <div id="divPassword" class="divv">
+            <label for="inputPass1" class="formLabel" id="label2">
+              Password (8+ Characters) * </label
+            ><br />
+            <input
+              id="inputPass1"
+              class="inputForm"
+              type="password"
+              name="password"
+              required
+            />
+          </div>
+          <div id="divConfirmPassword" class="divv">
+            <label for="confirmPass" class="formLabel" id="label2">
+              Confirm Password (8+ Characters) * </label
+            ><br />
+            <input
+              id="confirmPass"
+              class="inputForm"
+              type="password"
+              name="confirmNassword"
+              required
+            />
+          </div>
+          <div>
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"> Subscribe to our newsletter </label>
+          </div>
+          <br />
+          <button id="signUp-button" onclick="SignUpFunc(event)">Submit</button>
+          <br />
+          <div>
+            <p id="para2">Already have account?</p>
+            <a id="alink2" href="./Login_Page.html">Sign in </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../HOME(JS)/signUp.js"></script>
+  </body>
+</html>

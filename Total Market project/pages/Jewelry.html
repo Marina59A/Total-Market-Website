@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../HOME(CSS)/Header&Footer.css">
+    <link rel="stylesheet" href="../HOME(CSS)/Home.css">
+    
+ </head>
+ <body>
+ 
+    <!-- Header Section -->
+    <header class="header">
+     <div class="containerH">
+         <!-- Logo -->
+         <div class="logo">
+             <a href=>
+                 <img src="../IMAGES/HEADER&FOOTER/Hlogo.png" alt="Logo">
+             </a>
+         </div>
+ 
+         <!-- Search Bar -->
+         <div class="search-bar">
+             <input type="text" placeholder="Search With Keyword or Item">
+         </div>
+ 
+         <!-- Icons and Language -->
+         <div class="header-options">
+             <div class="icons">
+ 
+                 
+                 <a href="../HOME(HTML)/Fav.html" class="fas fa-heart"> <span id="counter"> 0 </span></a>
+ 
+                 <a href="/CART " class="fas fa-shopping-cart"> 0<span id="buyCounter"></span></a>
+ 
+             </div>
+             <div class="login">
+                 <a href="../HOME(HTML)/Login_Page.html">Login / Sign up</a>
+             </div>
+             <div class="language">
+                 <select id="languageSwitcher">
+             <option value="en">English</option>
+             <option value="ar">العربية</option>
+           </select>
+             </div>
+         </div>
+     </div>
+ 
+     <!-- Navigation Menu -->
+     <nav class="nav">
+         <ul>
+             <li><a href="../HOME(HTML)/HOME.html">Home</a></li>
+             <li><a href="../pages/Jewelry.html">Jewelry</a></li>
+             <li><a href="../pages/Clothes.html">Clothes</a></li>
+             <li><a href="../pages/Electronics.html">Electronics</a></li>
+         </ul>
+     </nav>
+ </header>
+<br>
+<br>
+<div class="afterheader">
+    <i class="fas fa-home"></i>
+    <a href="../HOME(HTML)/HOME.html">Home</a>
+    <i class="fa-solid fa-chevron-right"></i>
+    
+    <a href="Jewelry.html">Jewelry</a>
+</div>
+<hr>
+
+<div class="container">
+
+    <div class="sidebar">
+        <div class="search">
+        
+        <input id="search" type="text" >
+        <label for="search">Search Products</label>
+    </div>
+    <div class="filter-section">
+        <h3>Price</h3>
+        <input type="text" id="min-price" placeholder="min price">
+        <input type="text" id="max-price" placeholder="max-price">
+        <br>
+        <div id="forbutton">
+        <button id="clear">clear</button>
+        <button id="apply">Apply</button>
+    </div>
+    </div>
+        <div class="dropdown">
+            <div class="dropdown-header" onclick="toggleCategoryDropdown()">Categories</div>
+            <div class="dropdown-content">
+                <label><input type="radio" name="category" value="mobiles"><a href="./Electronics.html">Electronics</a></label>
+                <label><input type="radio" name="category" value="tablets"><a href="./Jewelry.html.html"> Jewelry</a></label>
+                <label><input type="radio" name="category" value="laptops"><a href="./Clothes.html">Clothes</a></label>
+            </div>
+        </div>
+    
+      
+        
+    </div>
+
+    <div class="main-content">
+        <h1>Jewelry</h1>
+        <div class="sort-container">
+            <div class="sort-dropdown">
+                <button onclick="toggleSortDropdown()">Sort by: Default</button>
+                <div class="sort-dropdown-content">
+                    <div onclick="sortProducts('Default')">Default</div>
+                    <div onclick="sortProducts('Price')">Price:High to low</div>
+                    <div onclick="sortProducts('Price')">Price:Low t high</div>
+                 
+                    <div onclick="sortRatingHighToLow()">Rating: High to Low</div>
+    <div onclick="sortRatingLowToHigh()">Rating: Low to High</div>
+                   
+                </div>
+            </div>
+            <div class="view-icons">
+                <button onclick="setProductView('grid')" class="active">☷</button>
+                <button onclick="setProductView('list')">☰</button>
+            </div>
+         
+            
+        </div>
+        <div id="Brands">
+            <div class="slider">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ8FQDWIW8o_VrjpiaFmqT7AUr-9-cNzMohkRji1pSCDQXZtBoNswPy2T12_7RGRR8g01u5YZy0C-dNXoVEteg-eU0P9CzUMtqK99wEifSZoXRP0I1HwKvEAZGzgsxWVcavuJlfs4M&usqp=CAc" alt=""> 
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRE8ZFSxDoK6xG5npszp0M73IO5_fWbtq-_BewXWjhXlGDZkoYKRqHKysANEFmACmAZROfTPhIBSlvd8PX6nkJQhnarjq6LG6nOYicOLxHJQCm8wn4W8yAJrJw-l0ENwsMhVtmLO_8&usqp=CAc" alt="Bransd">
+                <img src="data:image/jpeg;base64,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" alt="Brands">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqJQOrvIWax-4-uMgzXhlmHCny4ZekfIBlg&s" alt="">
+                <img src="https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg" alt="">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQl4csosJTEdFttkrNXG5a4EEtugPR9PF_TRblfe3Uf5rfTtVRPgzBlOFcGnvtN3uP_NYZpAzShBynOxNer61tQHw_uqIAaEQj7laIJUgXnbWL2abxX3MpiIaHQOWTCF9CYq1dOsDM&usqp=CAc" alt="">
+                <img src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" alt="">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRnORgDMiAcm2TS4CvOGHd02pne3xSCt6OtjGhoaxRwmaiJEdMjW2uaCw4PMQzRr_R5fYC_4yZB8nL9mr_6IZBcExOIy1ddOHkj3TCAvVJ7o0vuXLGv-hbEmzdPmsghchn7R96x148&usqp=CAc" alt="">
+                <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" alt=""> 
+            </div>
+        </div>
+        <div class="products grid-view" id="product-list"></div>
+           
+          
+            <!-- More product items -->
+        </div>
+    </div>
+</div>
+
+ <!-- Footer -->
+ <footer class="footer" style="position: relative;">
+    <div class="containerF">
+        <!-- Left Section: Logo and Description -->
+        <div class="footer-section">
+            <img src="../IMAGES/HEADER&FOOTER/Flogo.png" alt="TotalMarket Logo" class="footer-logo">
+            <p>Not Just A Mobile Shop</p>
+            <div class="payment-methods">
+                <img src="../IMAGES/HEADER&FOOTER/visa1.png" alt="Visa">
+                <img src="../IMAGES/HEADER&FOOTER/mastercard.png" alt="MasterCard">
+                <img src="../IMAGES/HEADER&FOOTER/meeza1.png" alt="Meeza">
+                <img src="../IMAGES/HEADER&FOOTER/forsa.png" alt="Forsa">
+            </div>
+            <p>Email: info@totalMarket.com</p>
+            <p>Phone: 16169</p>
+        </div>
+
+        <!-- Middle Section: Links -->
+        <div class="footer-section">
+            <h4>My Account</h4>
+            <ul>
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">My Orders</a></li>
+            </ul>
+            <h4>Find us</h4>
+            <ul>
+                <li><a href="../HOME(HTML)/Contact us.html">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Section: Quick Links -->
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="../HOME(HTML)/About Us.html">About us</a></li>
+                <li><a href="/HOME(HTML)/">Terms And Conditions</a></li>
+                <li><a href="../HOME(HTML)/Privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="../HOME(HTML)/ReturnPolicy.html">Return Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+        <p>COPYRIGHT © 2025 TOTAL MARKET. ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>
+
+<script src="../HOME(JS)/home.js"></script>
+<script src="../HOME(JS)/headerFooter.js"></script>
+<script src="../HOME(JS)/Fav.js"></script>
+
+<script src="jewelry.js"></script>
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../HOME(CSS)/Login.css" />
+    <link rel="stylesheet" href="../HOME(CSS)/Header&Footer.css" />
+    <link rel="stylesheet" href="../HOME(CSS)/Home.css" />
+  </head>
+
+  <body>
+    <div id="logInDiv">
+      <div id="divForm">
+        <form action="" method="" id="logInForm">
+          <div id="caption">
+            <caption>
+              User sign in
+            </caption>
+            <br />
+          </div>
+          <div id="divInputName">
+            <label for="inputName" class="formLabel" id="label1"> Email </label
+            ><br />
+            <input
+              id="inputName"
+              class="inputForm"
+              type="text"
+              name="userName"
+              required
+            />
+          </div>
+          <br />
+          <div id="divPassword">
+            <label for="inputPass" class="formLabel" id="label2">
+              Password (8+ Characters) *
+            </label>
+            <br />
+            <input
+              id="inputPass"
+              class="inputForm"
+              type="password"
+              name="password"
+              required
+            />
+          </div>
+          <br />
+          <div id="forgetId" onclick="ForgetFunc()">
+            <a id="forgetpass" href="">Forget password?</a><br />
+          </div>
+          <button id="signin-button" onclick="LogInFunc(event)">Sign In</button>
+          <br />
+          <div>
+            <p id="para1">Don't have an account?</p>
+            <a id="alink" href="./SignUp.html">Click here to create one</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../HOME(JS)/login.js"></script>
+    <script src="./Fav.js"></script>
+    <script src="../HOME(JS)/home.js"></script>
+    <script src="../HOME(JS)/headerFooter.js"></script>
+  </body>
+</html>
