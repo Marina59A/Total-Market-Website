@@ -1,31 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Favourite</title>
-  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" href="../HOME(CSS)/Header&Footer.css">
+  <link rel="stylesheet" href="../HOME(CSS)/Home.css">
+  <title>Favourite</title>
+
+  <style>
     body {
-            font-family: 'Arial', sans-serif;
-            
-         }
+      font-family: 'Arial', sans-serif;
+
+    }
+
     h1 {
       background: #3397ef;
       color: #fff;
       padding: 10px;
       border-radius: 8px;
       text-align: center;
-      }
+      margin-top: 120px;
+    }
+
+    #con {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
   </style>
 </head>
-<body>
-  <h1>Favourite Products</h1>
-  <div id="fav-items" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
 
-  <script src="../HOME(JS)/Fav.js">
-    
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="containerH">
+      <!-- Logo -->
+      <div class="logo">
+        <a href=>
+          <img src="../IMAGES/HEADER&FOOTER/Hlogo.png" alt="Logo">
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search With Keyword or Item">
+      </div>
+
+      <!-- Icons and Language -->
+      <div class="header-options">
+        <div class="icons">
+
+
+          <a href="../HOME(HTML)/Fav.html" class="fas fa-heart"> <span id="counter"> 0 </span></a>
+
+          <a href="/CART " class="fas fa-shopping-cart"> 0<span id="buyCounter"></span></a>
+
+        </div>
+        <div class="login">
+          <a href="../HOME(HTML)/Login_Page.html">Login / Sign up</a>
+        </div>
+        <div class="language">
+          <select id="languageSwitcher">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav">
+      <ul>
+        <li><a href="../HOME(HTML)/HOME.html">Home</a></li>
+        <li><a href="../pages/Jewelry.html">Jewelry</a></li>
+        <li><a href="../pages/Clothes.html">Clothes</a></li>
+        <li><a href="../pages/Electronics.html">Electronics</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <br>
+
+
+  <div id="con">
+
+    <h1>Favourite Products</h1>
+    <div id="fav-items" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" style="position: relative;">
+    <div class="containerF">
+      <!-- Left Section: Logo and Description -->
+      <div class="footer-section">
+        <img src="../IMAGES/HEADER&FOOTER/Flogo.png" alt="TotalMarket Logo" class="footer-logo">
+        <p>Not Just A Mobile Shop</p>
+        <div class="payment-methods">
+          <img src="../IMAGES/HEADER&FOOTER/visa1.png" alt="Visa">
+          <img src="../IMAGES/HEADER&FOOTER/mastercard.png" alt="MasterCard">
+          <img src="../IMAGES/HEADER&FOOTER/meeza1.png" alt="Meeza">
+          <img src="../IMAGES/HEADER&FOOTER/forsa.png" alt="Forsa">
+        </div>
+        <p>Email: info@totalMarket.com</p>
+        <p>Phone: 16169</p>
+      </div>
+
+      <!-- Middle Section: Links -->
+      <div class="footer-section">
+        <h4>My Account</h4>
+        <ul>
+          <li><a href="#">My Profile</a></li>
+          <li><a href="#">My Orders</a></li>
+        </ul>
+        <h4>Find us</h4>
+        <ul>
+          <li><a href="../HOME(HTML)/Contact us.html">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Section: Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../HOME(HTML)/About Us.html">About us</a></li>
+          <li><a href="/HOME(HTML)/">Terms And Conditions</a></li>
+          <li><a href="../HOME(HTML)/Privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="../HOME(HTML)/ReturnPolicy.html">Return Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <p>COPYRIGHT © 2025 TOTAL MARKET. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+  <script src="../HOME(JS)/home.js"></script>
+  <script src="../HOME(JS)/headerFooter.js"></script>
+  <script src="../HOME(JS)/Fav.js"></script>
+
+  <script src="Fav.js">
+
 
   </script>
 </body>
+
 </html>
